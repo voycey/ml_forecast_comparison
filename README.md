@@ -7,7 +7,12 @@ This is a simple repository containing notebooks showcasing the latest in AutoML
 2. Upload `data` to your Google Drive at `Colab Data/AutoGluon/`
 3. Upload the notebooks to colab.google.com
 
-They should then run
+They should then run without any changes - make sure you are using a CUDA enabled Kernel in Colab.
+
+### Collaborating.
+
+Please feel free to add new models to this repository as they come and use the same energy data that the other tests have used.
+Please follow the Seaborn structure for visualisation where possible so its a bit easier to read and compare across models
 
 # Results Summary:
 
