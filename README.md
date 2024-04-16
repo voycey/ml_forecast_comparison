@@ -31,3 +31,10 @@ Also easy to implement, above average accuracy, could be tweaked to get better a
 Traditional ML Forecast method with some hyperparameter tuning - Good accuracy but much more complicated to implement.
 
 ![summary](images/randomforest-summary.png)
+
+## GRU DNN + Keras
+Another traditional ML forecast method - this is incredibly accurate but has a long training time and the model seems somewhat overfit, I will try with another dataset here to see
+if it is actaully this good.
+This took significantly longer to get right as the RNN model from Darts just didnt seem to work, so using Keras was easier and I was able to rationalise down the final code.
+
+![summary](images/rnn_keras-summary.png)
