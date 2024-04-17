@@ -28,6 +28,7 @@ Also relatively easy to implement however accuracy out of the box is not great, 
 ![summary](images/prophet-summary.png)
 
 ## Chronos
+This is a bit different than the others, it is actually a timeseries GPT model
 Also easy to implement, above average accuracy, could be tweaked to get better accuracy I am sure but has a limit of 64 forecast horizon
 
 ![summary](images/chronos-summary.png)
@@ -43,3 +44,9 @@ if it is actaully this good.
 This took significantly longer to get right as the RNN model from Darts just didnt seem to work, so using Keras was easier and I was able to rationalise down the final code.
 
 ![summary](images/rnn_keras-summary.png)
+
+## LSTM RNN + Keras
+This is a traditional RNN approach - the accuracy on the trained data seems good but it seems to pick up some strange increases when comparing into the future, this is likely because I am using the 
+same approach as GRU which might not be suitable, either way for a low code approach this seems like it would need more training
+
+![summary](images/lstm_keras-summary.png)
