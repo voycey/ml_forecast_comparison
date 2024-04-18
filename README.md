@@ -46,7 +46,22 @@ This took significantly longer to get right as the RNN model from Darts just did
 ![summary](images/rnn_keras-summary.png)
 
 ## LSTM RNN + Keras
-This is a traditional RNN approach - the accuracy on the trained data seems good but it seems to pick up some strange increases when comparing into the future, this is likely because I am using the 
-same approach as GRU which might not be suitable, either way for a low code approach this seems like it would need more training
+This is a more traditional RNN approach - the accuracy on the trained data seems good but it seems to pick up some strange increases when comparing into the future, this is likely because I am using the 
+same incremental forecast approach as GRU which might not be suitable, either way for a low code approach this seems like it would need more training
 
 ![summary](images/lstm_keras-summary.png)
+
+## AutoTS
+This is another AutoML timeseries forecasting data that can build Ensemble models like AutoGluon, accuracy is above average but could definitely be tweaked beyond what I have done in this notebook
+Training time was relatively long (1 hour CPU) - enabling GPU on this seemed overly complex.
+
+![summary](images/autots-summary.png)
+
+
+# Failures
+These models basically failed enough where I couldnt be bothered to chase up to get them working
+
+## Ray
+Unusable - crashes kernel each time so consider this code just a placeholder. Seems to be a common theme on their support forums: https://discuss.ray.io/t/simple-hello-world-example-crashes-badly/13272
+
+
