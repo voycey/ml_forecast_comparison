@@ -12,7 +12,7 @@ They should then run without any changes - make sure you are using a CUDA enable
 ### Collaborating.
 
 Please feel free to add new models to this repository as they come and use the same energy data that the other tests have used.
-Please follow the Seaborn structure for visualisation where possible so its a bit easier to read and compare across models
+Please follow the Seaborn structure for visualisation where possible so its a bit easier to read and compare across models (do as I say, not as I do)
 
 # Results Summary:
 
